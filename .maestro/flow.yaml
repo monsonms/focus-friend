@@ -1,0 +1,39 @@
+appId: com.anonymous.FocusFriend
+---
+- launchApp
+
+# Ensure the dev client loads the project bundle from Metro.
+# iOS Simulator can reach Metro via host localhost.
+- openLink: "com.anonymous.FocusFriend://expo-development-client/?url=http%3A%2F%2Flocalhost%3A8081"
+
+- extendedWaitUntil:
+    visible: "What is the ONE thing?"
+    timeout: 30000
+
+# Enter task
+- tapOn: "e.g., Open IDE and run tests"
+- inputText: "Finish the Report"
+
+# Start focus
+- tapOn: "Start Focus"
+
+# Timer screen assertions
+- assertVisible: "Finish the Report"
+- assertVisible:
+    text: "25:00"
+
+# Start the countdown (timer defaults to idle on entry)
+- tapOn: "Resume"
+
+# Let it tick (prove countdown is progressing)
+- extendedWaitUntil:
+    visible: "24:59"
+    timeout: 8000
+
+# Pause + Reset
+- tapOn: "Pause"
+- tapOn: "Reset"
+
+# Return to Landing (explicit in-app back button)
+- tapOn: "Back"
+- assertVisible: "What is the ONE thing?"

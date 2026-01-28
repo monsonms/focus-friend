@@ -1,0 +1,836 @@
+[ {
+  "command" : {
+    "defineVariablesCommand" : {
+      "env" : {
+        "MAESTRO_FILENAME" : "flow"
+      },
+      "optional" : false
+    }
+  },
+  "metadata" : {
+    "status" : "COMPLETED",
+    "timestamp" : 1769633513566,
+    "duration" : 5
+  }
+}, {
+  "command" : {
+    "openLinkCommand" : {
+      "link" : "com.anonymous.FocusFriend://expo-development-client/?url=http%3A%2F%2Flocalhost%3A8081",
+      "autoVerify" : false,
+      "browser" : false,
+      "optional" : false
+    }
+  },
+  "metadata" : {
+    "status" : "COMPLETED",
+    "timestamp" : 1769633515386,
+    "duration" : 1339
+  }
+}, {
+  "command" : {
+    "assertConditionCommand" : {
+      "condition" : {
+        "visible" : {
+          "textRegex" : "What is the ONE thing?",
+          "optional" : false
+        }
+      },
+      "timeout" : "30000",
+      "optional" : false
+    }
+  },
+  "metadata" : {
+    "status" : "FAILED",
+    "timestamp" : 1769633516727,
+    "duration" : 30185,
+    "error" : {
+      "message" : "Assertion is false: \"What is the ONE thing?\" is visible",
+      "hierarchyRoot" : {
+        "attributes" : {
+          "bounds" : "[0,0][0,0]",
+          "enabled" : "false",
+          "focused" : "false",
+          "selected" : "false",
+          "checked" : "false"
+        },
+        "children" : [ {
+          "attributes" : {
+            "accessibilityText" : "_scaffold",
+            "bounds" : "[0,0][402,874]",
+            "enabled" : "true",
+            "focused" : "false",
+            "selected" : "false",
+            "checked" : "false"
+          },
+          "children" : [ {
+            "attributes" : {
+              "bounds" : "[0,0][402,874]",
+              "enabled" : "true",
+              "focused" : "false",
+              "selected" : "false",
+              "checked" : "false"
+            },
+            "children" : [ {
+              "attributes" : {
+                "bounds" : "[0,0][402,874]",
+                "enabled" : "true",
+                "focused" : "false",
+                "selected" : "false",
+                "checked" : "false"
+              },
+              "children" : [ {
+                "attributes" : {
+                  "bounds" : "[-402,-874][804,1748]",
+                  "enabled" : "true",
+                  "focused" : "false",
+                  "selected" : "false",
+                  "checked" : "false"
+                },
+                "enabled" : true,
+                "focused" : false,
+                "checked" : false,
+                "selected" : false
+              }, {
+                "attributes" : {
+                  "bounds" : "[0,62][402,874]",
+                  "enabled" : "true",
+                  "focused" : "false",
+                  "selected" : "false",
+                  "checked" : "false"
+                },
+                "children" : [ {
+                  "attributes" : {
+                    "bounds" : "[0,62][402,874]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "children" : [ {
+                    "attributes" : {
+                      "bounds" : "[0,62][402,874]",
+                      "enabled" : "true",
+                      "focused" : "false",
+                      "selected" : "false",
+                      "checked" : "false"
+                    },
+                    "children" : [ {
+                      "attributes" : {
+                        "bounds" : "[0,62][402,874]",
+                        "enabled" : "true",
+                        "focused" : "false",
+                        "selected" : "false",
+                        "checked" : "false"
+                      },
+                      "children" : [ {
+                        "attributes" : {
+                          "bounds" : "[0,62][402,780]",
+                          "enabled" : "true",
+                          "focused" : "false",
+                          "selected" : "false",
+                          "checked" : "false"
+                        },
+                        "children" : [ {
+                          "attributes" : {
+                            "bounds" : "[0,62][402,198]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "accessibilityText" : "No script URL provided. Make sure the packager is running or you have embedded a JS bundle in your application bundle.\n\nunsanitizedScriptURLString = (null)",
+                              "resource-id" : "redbox-error",
+                              "bounds" : "[20,62][382,198]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        }, {
+                          "attributes" : {
+                            "accessibilityText" : "Vertical scroll bar, 1 page",
+                            "value" : "0%",
+                            "text" : "0%",
+                            "bounds" : "[369,100][399,780]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "bounds" : "[396,770][399,777]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        }, {
+                          "attributes" : {
+                            "accessibilityText" : "Horizontal scroll bar, 1 page",
+                            "value" : "0%",
+                            "text" : "0%",
+                            "bounds" : "[0,747][402,777]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "bounds" : "[392,774][399,777]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        } ],
+                        "enabled" : true,
+                        "focused" : false,
+                        "checked" : false,
+                        "selected" : false
+                      }, {
+                        "attributes" : {
+                          "bounds" : "[0,779][402,780]",
+                          "enabled" : "true",
+                          "focused" : "false",
+                          "selected" : "false",
+                          "checked" : "false"
+                        },
+                        "enabled" : true,
+                        "focused" : false,
+                        "checked" : false,
+                        "selected" : false
+                      }, {
+                        "attributes" : {
+                          "bounds" : "[0,780][402,874]",
+                          "enabled" : "true",
+                          "focused" : "false",
+                          "selected" : "false",
+                          "checked" : "false"
+                        },
+                        "children" : [ {
+                          "attributes" : {
+                            "accessibilityText" : "Dismiss (ESC)",
+                            "resource-id" : "redbox-dismiss",
+                            "bounds" : "[0,780][100,840]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "accessibilityText" : "Dismiss (ESC)",
+                              "bounds" : "[27,794][74,826]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        }, {
+                          "attributes" : {
+                            "accessibilityText" : "Reload (⌘R)",
+                            "resource-id" : "redbox-reload",
+                            "bounds" : "[100,780][201,840]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "accessibilityText" : "Reload (⌘R)",
+                              "bounds" : "[130,794][172,826]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        }, {
+                          "attributes" : {
+                            "accessibilityText" : "Copy (⌥⌘C)",
+                            "resource-id" : "redbox-copy",
+                            "bounds" : "[201,780][301,840]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "accessibilityText" : "Copy (⌥⌘C)",
+                              "bounds" : "[229,794][273,826]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        }, {
+                          "attributes" : {
+                            "accessibilityText" : "Extra Info (⌘E)",
+                            "resource-id" : "redbox-extra",
+                            "bounds" : "[301,780][402,840]",
+                            "enabled" : "true",
+                            "focused" : "false",
+                            "selected" : "false",
+                            "checked" : "false"
+                          },
+                          "children" : [ {
+                            "attributes" : {
+                              "accessibilityText" : "Extra Info (⌘E)",
+                              "bounds" : "[322,794][380,826]",
+                              "enabled" : "true",
+                              "focused" : "false",
+                              "selected" : "false",
+                              "checked" : "false"
+                            },
+                            "enabled" : true,
+                            "focused" : false,
+                            "checked" : false,
+                            "selected" : false
+                          } ],
+                          "enabled" : true,
+                          "focused" : false,
+                          "checked" : false,
+                          "selected" : false
+                        } ],
+                        "enabled" : true,
+                        "focused" : false,
+                        "checked" : false,
+                        "selected" : false
+                      } ],
+                      "enabled" : true,
+                      "focused" : false,
+                      "checked" : false,
+                      "selected" : false
+                    } ],
+                    "enabled" : true,
+                    "focused" : false,
+                    "checked" : false,
+                    "selected" : false
+                  } ],
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                } ],
+                "enabled" : true,
+                "focused" : false,
+                "checked" : false,
+                "selected" : false
+              } ],
+              "enabled" : true,
+              "focused" : false,
+              "checked" : false,
+              "selected" : false
+            } ],
+            "enabled" : true,
+            "focused" : false,
+            "checked" : false,
+            "selected" : false
+          }, {
+            "attributes" : {
+              "bounds" : "[0,0][402,874]",
+              "enabled" : "true",
+              "focused" : "false",
+              "selected" : "false",
+              "checked" : "false"
+            },
+            "children" : [ {
+              "attributes" : {
+                "bounds" : "[0,0][402,874]",
+                "enabled" : "true",
+                "focused" : "false",
+                "selected" : "false",
+                "checked" : "false"
+              },
+              "children" : [ {
+                "attributes" : {
+                  "bounds" : "[0,0][402,874]",
+                  "enabled" : "true",
+                  "focused" : "false",
+                  "selected" : "false",
+                  "checked" : "false"
+                },
+                "enabled" : true,
+                "focused" : false,
+                "checked" : false,
+                "selected" : false
+              } ],
+              "enabled" : true,
+              "focused" : false,
+              "checked" : false,
+              "selected" : false
+            } ],
+            "enabled" : true,
+            "focused" : false,
+            "checked" : false,
+            "selected" : false
+          } ],
+          "enabled" : true,
+          "focused" : false,
+          "checked" : false,
+          "selected" : false
+        }, {
+          "attributes" : {
+            "bounds" : "[0,0][0,0]",
+            "enabled" : "false",
+            "focused" : "false",
+            "selected" : "false",
+            "checked" : "false"
+          },
+          "children" : [ {
+            "attributes" : {
+              "bounds" : "[0,0][402,54]",
+              "enabled" : "true",
+              "focused" : "false",
+              "selected" : "false",
+              "checked" : "false"
+            },
+            "enabled" : true,
+            "focused" : false,
+            "checked" : false,
+            "selected" : false
+          }, {
+            "attributes" : {
+              "bounds" : "[0,0][402,54]",
+              "enabled" : "true",
+              "focused" : "false",
+              "selected" : "false",
+              "checked" : "false"
+            },
+            "children" : [ {
+              "attributes" : {
+                "bounds" : "[0,0][402,54]",
+                "enabled" : "true",
+                "focused" : "false",
+                "selected" : "false",
+                "checked" : "false"
+              },
+              "children" : [ {
+                "attributes" : {
+                  "bounds" : "[0,0][402,54]",
+                  "enabled" : "true",
+                  "focused" : "false",
+                  "selected" : "false",
+                  "checked" : "false"
+                },
+                "children" : [ {
+                  "attributes" : {
+                    "bounds" : "[55,14][92,51]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                }, {
+                  "attributes" : {
+                    "accessibilityText" : "1:52 PM",
+                    "bounds" : "[57,22][91,42]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                }, {
+                  "attributes" : {
+                    "bounds" : "[309,14][345,51]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                }, {
+                  "attributes" : {
+                    "accessibilityText" : "Cellular",
+                    "value" : "No signal",
+                    "text" : "No signal",
+                    "bounds" : "[288,26][307,38]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                }, {
+                  "attributes" : {
+                    "value" : "SSID, 3 of 3 Wi-Fi bars",
+                    "text" : "SSID, 3 of 3 Wi-Fi bars",
+                    "resource-id" : "3 of 3 Wi-Fi bars",
+                    "bounds" : "[315,26][332,38]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                }, {
+                  "attributes" : {
+                    "accessibilityText" : "100% battery power",
+                    "value" : "Not charging",
+                    "text" : "Not charging",
+                    "bounds" : "[339,26][366,39]",
+                    "enabled" : "true",
+                    "focused" : "false",
+                    "selected" : "false",
+                    "checked" : "false"
+                  },
+                  "enabled" : true,
+                  "focused" : false,
+                  "checked" : false,
+                  "selected" : false
+                } ],
+                "enabled" : true,
+                "focused" : false,
+                "checked" : false,
+                "selected" : false
+              } ],
+              "enabled" : true,
+              "focused" : false,
+              "checked" : false,
+              "selected" : false
+            } ],
+            "enabled" : true,
+            "focused" : false,
+            "checked" : false,
+            "selected" : false
+          } ],
+          "enabled" : false,
+          "focused" : false,
+          "checked" : false,
+          "selected" : false
+        } ],
+        "enabled" : false,
+        "focused" : false,
+        "checked" : false,
+        "selected" : false
+      },
+      "debugMessage" : "Assertion '\"What is the ONE thing?\" is visible' failed. Check the UI hierarchy in debug artifacts to verify the element state and properties.\n\nPossible causes:\n- Element selector may be incorrect - check if there are similar elements with slightly different names/properties.\n- Element may be temporarily unavailable due to loading state\n- This could be a real regression that needs to be addressed",
+      "stackTrace" : [ {
+        "classLoaderName" : "app",
+        "methodName" : "assertConditionCommand",
+        "fileName" : "Orchestra.kt",
+        "lineNumber" : 418,
+        "nativeMethod" : false,
+        "className" : "maestro.orchestra.Orchestra"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "executeCommand",
+        "fileName" : "Orchestra.kt",
+        "lineNumber" : 338,
+        "nativeMethod" : false,
+        "className" : "maestro.orchestra.Orchestra"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "executeCommands",
+        "fileName" : "Orchestra.kt",
+        "lineNumber" : 252,
+        "nativeMethod" : false,
+        "className" : "maestro.orchestra.Orchestra"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runFlow",
+        "fileName" : "Orchestra.kt",
+        "lineNumber" : 170,
+        "nativeMethod" : false,
+        "className" : "maestro.orchestra.Orchestra"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runCommands",
+        "fileName" : "MaestroCommandRunner.kt",
+        "lineNumber" : 196,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.runner.MaestroCommandRunner"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "invokeSuspend",
+        "fileName" : "TestRunner.kt",
+        "lineNumber" : 75,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.runner.TestRunner$runSingle$result$1$1"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "resumeWith",
+        "fileName" : "ContinuationImpl.kt",
+        "lineNumber" : 34,
+        "nativeMethod" : false,
+        "className" : "kotlin.coroutines.jvm.internal.BaseContinuationImpl"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "run",
+        "fileName" : "DispatchedTask.kt",
+        "lineNumber" : 104,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.DispatchedTask"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "processNextEvent",
+        "fileName" : "EventLoop.common.kt",
+        "lineNumber" : 277,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.EventLoopImplBase"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "joinBlocking",
+        "fileName" : "Builders.kt",
+        "lineNumber" : 95,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.BlockingCoroutine"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runBlocking",
+        "fileName" : "Builders.kt",
+        "lineNumber" : 69,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.BuildersKt__BuildersKt"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runBlocking",
+        "lineNumber" : 1,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.BuildersKt"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runBlocking$default",
+        "fileName" : "Builders.kt",
+        "lineNumber" : 48,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.BuildersKt__BuildersKt"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runBlocking$default",
+        "lineNumber" : 1,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.BuildersKt"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runSingle$lambda$0",
+        "fileName" : "TestRunner.kt",
+        "lineNumber" : 74,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.runner.TestRunner"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runCatching-ta8aW1Q",
+        "fileName" : "TestRunner.kt",
+        "lineNumber" : 200,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.runner.TestRunner"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runSingle",
+        "fileName" : "TestRunner.kt",
+        "lineNumber" : 65,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.runner.TestRunner"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runSingleFlow",
+        "fileName" : "TestCommand.kt",
+        "lineNumber" : 531,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.command.TestCommand"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runShardSuite$lambda$10",
+        "fileName" : "TestCommand.kt",
+        "lineNumber" : 500,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.command.TestCommand"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "newSession",
+        "fileName" : "MaestroSessionManager.kt",
+        "lineNumber" : 129,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.session.MaestroSessionManager"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "newSession$default",
+        "fileName" : "MaestroSessionManager.kt",
+        "lineNumber" : 65,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.session.MaestroSessionManager"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runShardSuite",
+        "fileName" : "TestCommand.kt",
+        "lineNumber" : 465,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.command.TestCommand"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "access$runShardSuite",
+        "fileName" : "TestCommand.kt",
+        "lineNumber" : 80,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.command.TestCommand"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "invokeSuspend",
+        "fileName" : "TestCommand.kt",
+        "lineNumber" : 424,
+        "nativeMethod" : false,
+        "className" : "maestro.cli.command.TestCommand$handleSessions$1$results$1$1"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "resumeWith",
+        "fileName" : "ContinuationImpl.kt",
+        "lineNumber" : 34,
+        "nativeMethod" : false,
+        "className" : "kotlin.coroutines.jvm.internal.BaseContinuationImpl"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "run",
+        "fileName" : "DispatchedTask.kt",
+        "lineNumber" : 104,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.DispatchedTask"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "run",
+        "fileName" : "LimitedDispatcher.kt",
+        "lineNumber" : 111,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.internal.LimitedDispatcher$Worker"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "run",
+        "fileName" : "Tasks.kt",
+        "lineNumber" : 99,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.scheduling.TaskImpl"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runSafely",
+        "fileName" : "CoroutineScheduler.kt",
+        "lineNumber" : 585,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.scheduling.CoroutineScheduler"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "executeTask",
+        "fileName" : "CoroutineScheduler.kt",
+        "lineNumber" : 802,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.scheduling.CoroutineScheduler$Worker"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "runWorker",
+        "fileName" : "CoroutineScheduler.kt",
+        "lineNumber" : 706,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.scheduling.CoroutineScheduler$Worker"
+      }, {
+        "classLoaderName" : "app",
+        "methodName" : "run",
+        "fileName" : "CoroutineScheduler.kt",
+        "lineNumber" : 693,
+        "nativeMethod" : false,
+        "className" : "kotlinx.coroutines.scheduling.CoroutineScheduler$Worker"
+      } ],
+      "localizedMessage" : "Assertion is false: \"What is the ONE thing?\" is visible"
+    }
+  }
+}, {
+  "command" : {
+    "applyConfigurationCommand" : {
+      "config" : {
+        "appId" : "com.anonymous.FocusFriend"
+      },
+      "optional" : false
+    }
+  },
+  "metadata" : {
+    "status" : "COMPLETED",
+    "timestamp" : 1769633513572,
+    "duration" : 3
+  }
+}, {
+  "command" : {
+    "launchAppCommand" : {
+      "appId" : "com.anonymous.FocusFriend",
+      "optional" : false
+    }
+  },
+  "metadata" : {
+    "status" : "COMPLETED",
+    "timestamp" : 1769633513576,
+    "duration" : 1808
+  }
+} ]

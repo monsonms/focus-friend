@@ -1,0 +1,271 @@
+13:47:36.533 [ INFO] maestro.cli.report.TestDebugReporter.logSystemInfo: Debug output path: /Users/mark.monson/VSCodeProjects/focusfriend/.maestro/debug-output/.maestro/tests/2026-01-28_134736
+13:47:36.534 [ INFO] MAESTRO.logSystemInfo: ---- System Info ----
+13:47:36.535 [ INFO] MAESTRO.logSystemInfo: Maestro Version: 2.1.0
+13:47:36.535 [ INFO] MAESTRO.logSystemInfo: CI: Undefined
+13:47:36.535 [ INFO] MAESTRO.logSystemInfo: OS Name: Mac OS X
+13:47:36.535 [ INFO] MAESTRO.logSystemInfo: OS Version: 26.2
+13:47:36.535 [ INFO] MAESTRO.logSystemInfo: Architecture: aarch64
+13:47:36.536 [ INFO] MAESTRO.logSystemInfo: Java Version: 17
+13:47:36.659 [DEBUG] io.micrometer.common.util.internal.logging.InternalLoggerFactory.newDefaultFactory: Using SLF4J as the default logging framework
+13:47:36.665 [ INFO] MAESTRO.logSystemInfo: Xcode Version: 26.0.1
+13:47:36.671 [ INFO] MAESTRO.logSystemInfo: Flutter Version: Undefined
+13:47:36.678 [ INFO] MAESTRO.logSystemInfo: Flutter Channel: Undefined
+13:47:36.678 [ INFO] MAESTRO.logSystemInfo: ---------------------
+13:47:37.371 [ INFO] maestro.cli.command.TestCommand.runShardSuite: [shard 1] Selected device 4F3F534E-000F-4C06-99A8-CF3152844910 using port 7001 with execution plan ExecutionPlan(flowsToRun=[/Users/mark.monson/VSCodeProjects/focusfriend/.maestro/flow.yaml], sequence=FlowSequence(flows=[], continueOnFailure=true), workspaceConfig=WorkspaceConfig(flows=null, includeTags=null, excludeTags=null, executionOrder=null, baselineBranch=null, notifications=null, disableRetries=false, platform=PlatformConfiguration(android=AndroidConfiguration(disableAnimations=false), ios=IOSConfiguration(disableAnimations=false, snapshotKeyHonorModalViews=null)), testOutputDir=null))
+13:47:37.643 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on 4F3F534E-000F-4C06-99A8-CF3152844910
+13:47:37.678 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Done] Perform XCUITest driver status check on 4F3F534E-000F-4C06-99A8-CF3152844910
+13:47:37.684 [ INFO] maestro.cli.runner.TestRunner.runSingle$lambda$0: Running flow flow.yaml...
+13:47:37.706 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Getting device info
+13:47:37.790 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:37.791 [ INFO] maestro.Maestro.cachedDeviceInfo_delegate$lambda$0: Got device info: DeviceInfo(platform=IOS, widthPixels=1206, heightPixels=2622, widthGrid=402, heightGrid=874)
+13:47:37.822 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Define variables RUNNING
+13:47:37.827 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Define variables metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(defineVariablesCommand=DefineVariablesCommand(env={MAESTRO_FILENAME=flow}, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:37.828 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Define variables COMPLETED
+13:47:37.829 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Apply configuration RUNNING
+13:47:37.832 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Apply configuration metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(applyConfigurationCommand=ApplyConfigurationCommand(config=MaestroConfig(appId=com.anonymous.FocusFriend, name=null, tags=[], ext={}, onFlowStart=null, onFlowComplete=null, properties={}), label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:37.833 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Apply configuration COMPLETED
+13:47:37.834 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Launch app "com.anonymous.FocusFriend" RUNNING
+13:47:37.838 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Launch app "com.anonymous.FocusFriend" metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(launchAppCommand=LaunchAppCommand(appId=com.anonymous.FocusFriend, clearState=null, clearKeychain=null, stopApp=null, permissions=null, launchArguments=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:37.840 [ INFO] device.SimctlIOSDevice.setPermissions: [Start] Setting permissions all=allow through applesimutils
+13:47:37.840 [ INFO] util.LocalSimulatorUtils.setAppleSimutilsPermissions: [Start] Setting permissions via pinned applesimutils
+13:47:37.840 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [/Users/mark.monson/.maestro/deps/applesimutils, --byId, 4F3F534E-000F-4C06-99A8-CF3152844910, --bundle, com.anonymous.FocusFriend, --setPermissions, calendar=YES,camera=YES,contacts=YES,faceid=YES,homekit=YES,medialibrary=YES,microphone=YES,motion=YES,photos=YES,reminders=YES,siri=YES,speech=YES,userTracking=YES] with {}
+13:47:38.121 [ INFO] util.LocalSimulatorUtils.setAppleSimutilsPermissions: [Done] Setting permissions pinned applesimutils
+13:47:38.121 [ INFO] device.SimctlIOSDevice.setPermissions: [Done] Setting permissions through applesimutils
+13:47:38.122 [ INFO] device.SimctlIOSDevice.setPermissions: [Start] Setting Permissions all=allow through simctl
+13:47:38.122 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [xcrun, simctl, privacy, 4F3F534E-000F-4C06-99A8-CF3152844910, grant, location-always, com.anonymous.FocusFriend] with {}
+13:47:38.284 [ INFO] device.SimctlIOSDevice.setPermissions: [Done] Setting Permissions all=allow through simctl
+13:47:38.299 [ INFO] maestro.Maestro.launchApp: Launching app com.anonymous.FocusFriend
+13:47:38.300 [ INFO] maestro.Maestro.launchApp: Stopping com.anonymous.FocusFriend app during launch
+13:47:39.362 [ INFO] util.CommandLineUtils.runCommand: Running command line operation: [xcrun, simctl, launch, 4F3F534E-000F-4C06-99A8-CF3152844910, com.anonymous.FocusFriend] with {}
+13:47:39.691 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$2: Launch app "com.anonymous.FocusFriend" COMPLETED
+13:47:39.693 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$0: Assert that "What is the ONE thing?" is visible RUNNING
+13:47:39.700 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:41.297 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:41.299 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:41.512 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:41.513 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:41.513 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:41.603 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:41.603 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:41.704 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:41.704 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:41.704 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:41.801 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:41.801 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:41.981 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:41.981 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:41.982 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:41.991 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:41.991 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.091 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.091 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.091 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.099 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.099 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.195 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.195 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.195 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.203 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.204 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.297 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.297 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.297 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.304 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.304 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.398 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.398 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.398 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.406 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.406 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.503 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.504 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.504 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.512 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.512 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.604 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.604 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.604 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.611 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.612 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.702 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.702 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.702 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.709 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.709 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.802 [TRACE] ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1: Depth received: 11
+13:47:42.802 [ INFO] device.IOSDevice.viewHierarchy: Depth of the screen is 11
+13:47:42.802 [ INFO] maestro.cli.runner.MaestroCommandRunner.runCommands$lambda$11: Assert that "What is the ONE thing?" is visible metadata CommandMetadata(numberOfRuns=null, evaluatedCommand=MaestroCommand(assertConditionCommand=AssertConditionCommand(condition=Condition(platform=null, visible=ElementSelector(textRegex=What is the ONE thing?, idRegex=null, size=null, below=null, above=null, leftOf=null, rightOf=null, containsChild=null, containsDescendants=null, traits=null, index=null, enabled=null, optional=false, selected=null, checked=null, focused=null, childOf=null, css=null), notVisible=null, scriptCondition=null, label=null), timeout=null, label=null, optional=false)), logMessages=[], insight=Insight(message=, level=NONE), aiReasoning=null, labeledCommand=null)
+13:47:42.811 [ INFO] ios.xctest.XCTestIOSDevice.deviceInfo$lambda$0: Device info DeviceInfo(widthPixels=1206, heightPixels=2622, widthPoints=402, heightPoints=874)
+13:47:42.811 [ INFO] device.IOSDevice.viewHierarchy: Requesting view hierarchy of the screen
+13:47:42.879 [ERROR] maestro.orchestra.Orchestra.executeCommands: [Command execution] CommandFailed: Failed to connect to /127.0.0.1:7001
+13:47:42.881 [ INFO] maestro.Maestro.takeScreenshot: Taking screenshot
+13:47:42.881 [TRACE] maestro.utils.ScreenshotUtils.takeScreenshot: Taking screenshot to output sink
+13:47:42.883 [ERROR] maestro.cli.runner.TestRunner.runCatching-ta8aW1Q: Failed to run flow
+java.net.ConnectException: Failed to connect to /127.0.0.1:7001
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154) ~[okhttp-4.12.0.jar:?]
+	at xcuitest.XCTestDriverClient.executeJsonRequest(XCTestDriverClient.kt:227) ~[maestro-ios-driver.jar:?]
+	at xcuitest.XCTestDriverClient.viewHierarchy(XCTestDriverClient.kt:46) ~[maestro-ios-driver.jar:?]
+	at ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1(XCTestIOSDevice.kt:40) ~[maestro-ios.jar:?]
+	at ios.xctest.XCTestIOSDevice.execute(XCTestIOSDevice.kt:235) ~[maestro-ios.jar:?]
+	at ios.xctest.XCTestIOSDevice.viewHierarchy(XCTestIOSDevice.kt:38) ~[maestro-ios.jar:?]
+	at ios.LocalIOSDevice.viewHierarchy(LocalIOSDevice.kt:49) ~[maestro-ios.jar:?]
+	at maestro.drivers.IOSDriver.viewHierarchy(IOSDriver.kt:176) ~[maestro-client.jar:?]
+	at maestro.drivers.IOSDriver.contentDescriptor$lambda$22$lambda$21(IOSDriver.kt:170) ~[maestro-client.jar:?]
+	at maestro.drivers.IOSDriver.runDeviceCall(IOSDriver.kt:547) ~[maestro-client.jar:?]
+	at maestro.drivers.IOSDriver.contentDescriptor$lambda$22(IOSDriver.kt:170) ~[maestro-client.jar:?]
+	at maestro.utils.Metrics.measured(Metrics.kt:48) ~[maestro-utils.jar:?]
+	at maestro.drivers.IOSDriver.contentDescriptor(IOSDriver.kt:169) ~[maestro-client.jar:?]
+	at maestro.ViewHierarchy$Companion.from-8JJjmZI(ViewHierarchy.kt:29) ~[maestro-client.jar:?]
+	at maestro.Maestro.viewHierarchy-c1iYVAs(Maestro.kt:415) ~[maestro-client.jar:?]
+	at maestro.Maestro.viewHierarchy-c1iYVAs$default(Maestro.kt:414) ~[maestro-client.jar:?]
+	at maestro.Maestro.findElementWithTimeout_AE3g2Tc$lambda$9(Maestro.kt:425) ~[maestro-client.jar:?]
+	at maestro.utils.MaestroTimer.withTimeout(MaestroTimer.kt:16) ~[maestro-utils.jar:?]
+	at maestro.Maestro.findElementWithTimeout-AE3g2Tc(Maestro.kt:424) ~[maestro-client.jar:?]
+	at maestro.Maestro.findElementWithTimeout-AE3g2Tc$default(Maestro.kt:418) ~[maestro-client.jar:?]
+	at maestro.orchestra.Orchestra.findElement(Orchestra.kt:1202) ~[maestro-orchestra.jar:?]
+	at maestro.orchestra.Orchestra.evaluateCondition(Orchestra.kt:816) ~[maestro-orchestra.jar:?]
+	at maestro.orchestra.Orchestra.assertConditionCommand(Orchestra.kt:417) ~[maestro-orchestra.jar:?]
+	at maestro.orchestra.Orchestra.executeCommand(Orchestra.kt:338) ~[maestro-orchestra.jar:?]
+	at maestro.orchestra.Orchestra.executeCommands(Orchestra.kt:252) ~[maestro-orchestra.jar:?]
+	at maestro.orchestra.Orchestra.runFlow(Orchestra.kt:170) ~[maestro-orchestra.jar:?]
+	at maestro.cli.runner.MaestroCommandRunner.runCommands(MaestroCommandRunner.kt:196) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.runner.TestRunner$runSingle$result$1$1.invokeSuspend(TestRunner.kt:75) ~[maestro-cli-2.1.0.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34) ~[kotlin-stdlib-2.2.20.jar:2.2.20-release-333]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at maestro.cli.runner.TestRunner.runSingle$lambda$0(TestRunner.kt:74) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.runner.TestRunner.runCatching-ta8aW1Q(TestRunner.kt:200) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.runner.TestRunner.runSingle(TestRunner.kt:65) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.command.TestCommand.runSingleFlow(TestCommand.kt:531) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.command.TestCommand.runShardSuite$lambda$10(TestCommand.kt:500) ~[maestro-cli-2.1.0.jar:?]
+	at maestro.cli.session.MaestroSessionManager.newSession(MaestroSessionManager.kt:129) [maestro-cli-2.1.0.jar:?]
+	at maestro.cli.session.MaestroSessionManager.newSession$default(MaestroSessionManager.kt:65) [maestro-cli-2.1.0.jar:?]
+	at maestro.cli.command.TestCommand.runShardSuite(TestCommand.kt:465) [maestro-cli-2.1.0.jar:?]
+	at maestro.cli.command.TestCommand.access$runShardSuite(TestCommand.kt:80) [maestro-cli-2.1.0.jar:?]
+	at maestro.cli.command.TestCommand$handleSessions$1$results$1$1.invokeSuspend(TestCommand.kt:424) [maestro-cli-2.1.0.jar:?]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34) [kotlin-stdlib-2.2.20.jar:2.2.20-release-333]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:585) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:802) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:706) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:693) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	Suppressed: java.io.IOException: unexpected end of stream on http://127.0.0.1:7001/...
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:210) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:110) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:93) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at maestro.utils.HttpClient.build_OPOXi9g$lambda$0(HttpClient.kt:80) ~[maestro-utils.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154) ~[okhttp-4.12.0.jar:?]
+		at xcuitest.XCTestDriverClient.executeJsonRequest(XCTestDriverClient.kt:227) ~[maestro-ios-driver.jar:?]
+		at xcuitest.XCTestDriverClient.viewHierarchy(XCTestDriverClient.kt:46) ~[maestro-ios-driver.jar:?]
+		at ios.xctest.XCTestIOSDevice.viewHierarchy$lambda$1(XCTestIOSDevice.kt:40) ~[maestro-ios.jar:?]
+		at ios.xctest.XCTestIOSDevice.execute(XCTestIOSDevice.kt:235) ~[maestro-ios.jar:?]
+		at ios.xctest.XCTestIOSDevice.viewHierarchy(XCTestIOSDevice.kt:38) ~[maestro-ios.jar:?]
+		at ios.LocalIOSDevice.viewHierarchy(LocalIOSDevice.kt:49) ~[maestro-ios.jar:?]
+		at maestro.drivers.IOSDriver.viewHierarchy(IOSDriver.kt:176) ~[maestro-client.jar:?]
+		at maestro.drivers.IOSDriver.contentDescriptor$lambda$22$lambda$21(IOSDriver.kt:170) ~[maestro-client.jar:?]
+		at maestro.drivers.IOSDriver.runDeviceCall(IOSDriver.kt:547) ~[maestro-client.jar:?]
+		at maestro.drivers.IOSDriver.contentDescriptor$lambda$22(IOSDriver.kt:170) ~[maestro-client.jar:?]
+		at maestro.utils.Metrics.measured(Metrics.kt:48) ~[maestro-utils.jar:?]
+		at maestro.drivers.IOSDriver.contentDescriptor(IOSDriver.kt:169) ~[maestro-client.jar:?]
+		at maestro.ViewHierarchy$Companion.from-8JJjmZI(ViewHierarchy.kt:29) ~[maestro-client.jar:?]
+		at maestro.Maestro.viewHierarchy-c1iYVAs(Maestro.kt:415) ~[maestro-client.jar:?]
+		at maestro.Maestro.viewHierarchy-c1iYVAs$default(Maestro.kt:414) ~[maestro-client.jar:?]
+		at maestro.Maestro.findElementWithTimeout_AE3g2Tc$lambda$9(Maestro.kt:425) ~[maestro-client.jar:?]
+		at maestro.utils.MaestroTimer.withTimeout(MaestroTimer.kt:16) ~[maestro-utils.jar:?]
+		at maestro.Maestro.findElementWithTimeout-AE3g2Tc(Maestro.kt:424) ~[maestro-client.jar:?]
+		at maestro.Maestro.findElementWithTimeout-AE3g2Tc$default(Maestro.kt:418) ~[maestro-client.jar:?]
+		at maestro.orchestra.Orchestra.findElement(Orchestra.kt:1202) ~[maestro-orchestra.jar:?]
+		at maestro.orchestra.Orchestra.evaluateCondition(Orchestra.kt:816) ~[maestro-orchestra.jar:?]
+		at maestro.orchestra.Orchestra.assertConditionCommand(Orchestra.kt:417) ~[maestro-orchestra.jar:?]
+		at maestro.orchestra.Orchestra.executeCommand(Orchestra.kt:338) ~[maestro-orchestra.jar:?]
+		at maestro.orchestra.Orchestra.executeCommands(Orchestra.kt:252) ~[maestro-orchestra.jar:?]
+		at maestro.orchestra.Orchestra.runFlow(Orchestra.kt:170) ~[maestro-orchestra.jar:?]
+		at maestro.cli.runner.MaestroCommandRunner.runCommands(MaestroCommandRunner.kt:196) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.runner.TestRunner$runSingle$result$1$1.invokeSuspend(TestRunner.kt:75) ~[maestro-cli-2.1.0.jar:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34) ~[kotlin-stdlib-2.2.20.jar:2.2.20-release-333]
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:277) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:48) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source) ~[kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at maestro.cli.runner.TestRunner.runSingle$lambda$0(TestRunner.kt:74) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.runner.TestRunner.runCatching-ta8aW1Q(TestRunner.kt:200) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.runner.TestRunner.runSingle(TestRunner.kt:65) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.command.TestCommand.runSingleFlow(TestCommand.kt:531) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.command.TestCommand.runShardSuite$lambda$10(TestCommand.kt:500) ~[maestro-cli-2.1.0.jar:?]
+		at maestro.cli.session.MaestroSessionManager.newSession(MaestroSessionManager.kt:129) [maestro-cli-2.1.0.jar:?]
+		at maestro.cli.session.MaestroSessionManager.newSession$default(MaestroSessionManager.kt:65) [maestro-cli-2.1.0.jar:?]
+		at maestro.cli.command.TestCommand.runShardSuite(TestCommand.kt:465) [maestro-cli-2.1.0.jar:?]
+		at maestro.cli.command.TestCommand.access$runShardSuite(TestCommand.kt:80) [maestro-cli-2.1.0.jar:?]
+		at maestro.cli.command.TestCommand$handleSessions$1$results$1$1.invokeSuspend(TestCommand.kt:424) [maestro-cli-2.1.0.jar:?]
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34) [kotlin-stdlib-2.2.20.jar:2.2.20-release-333]
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:111) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:99) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:585) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:802) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:706) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+		at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:693) [kotlinx-coroutines-core-jvm-1.8.0.jar:?]
+	Caused by: java.io.EOFException: \n not found: limit=0 content=…
+		at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:362) ~[okio-jvm-3.16.2.jar:?]
+		at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29) ~[okhttp-4.12.0.jar:?]
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:180) ~[okhttp-4.12.0.jar:?]
+		... 68 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[?:?]
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128) ~[okhttp-4.12.0.jar:?]
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295) ~[okhttp-4.12.0.jar:?]
+	... 68 more
+13:47:42.887 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Start] Perform XCUITest driver status check on 4F3F534E-000F-4C06-99A8-CF3152844910
+13:47:42.888 [ INFO] xcuitest.installer.LocalXCTestInstaller.xcTestDriverStatusCheck: [Failed] Perform XCUITest driver status check on 4F3F534E-000F-4C06-99A8-CF3152844910, exception: java.net.ConnectException: Failed to connect to /127.0.0.1:7001
+13:47:43.033 [ INFO] maestro.cli.report.TestDebugReporter.deleteOldFiles: Performing purge of logs older than 14 days from /Users/mark.monson/VSCodeProjects/focusfriend/.maestro/debug-output/.maestro/tests
+13:47:43.391 [ERROR] maestro.cli.session.MaestroSessionManager.newSession$lambda$0: Failed to record heartbeat
+java.lang.InterruptedException: sleep interrupted
+	at java.base/java.lang.Thread.sleep(Native Method) ~[?:?]
+	at maestro.cli.session.MaestroSessionManager.newSession$lambda$0(MaestroSessionManager.kt:93) ~[maestro-cli-2.1.0.jar:?]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]

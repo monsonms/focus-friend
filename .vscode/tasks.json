@@ -1,0 +1,158 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "dev:metro (dev-client)",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"expo",
+				"start",
+				"--dev-client",
+				"--port",
+				"8081"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				{
+					"owner": "custom",
+					"pattern": [
+						{
+							"regexp": ".*"
+						}
+					],
+					"background": {
+						"activeOnStart": true,
+						"beginsPattern": "Starting Metro Bundler",
+						"endsPattern": "Metro waiting on"
+					}
+				}
+			]
+		},
+		{
+			"label": "e2e:ios (one terminal)",
+			"type": "shell",
+			"command": "bash",
+			"args": [
+				"-lc",
+				"set -euo pipefail; mkdir -p .maestro; rm -f .maestro/metro.log; npx expo start --dev-client --port 8081 > .maestro/metro.log 2>&1 & metro_pid=$!; trap 'kill $metro_pid 2>/dev/null || true' EXIT; until nc -z 127.0.0.1 8081; do sleep 0.5; done; maestro test .maestro/flow.yaml --debug-output .maestro/debug-output"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "test:jest",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"test"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "e2e:maestro (debug-output)",
+			"type": "shell",
+			"command": "maestro",
+			"args": [
+				"test",
+				".maestro/flow.yaml",
+				"--debug-output",
+				".maestro/debug-output"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "e2e:ios (start metro + maestro)",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"dev:metro (dev-client)",
+				"e2e:maestro (debug-output)"
+			],
+			"problemMatcher": [],
+			"group": "test"
+		},
+		{
+			"label": "maestro:version",
+			"type": "shell",
+			"command": "maestro",
+			"args": [
+				"--version"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "simctl:list-devices",
+			"type": "shell",
+			"command": "xcrun",
+			"args": [
+				"simctl",
+				"list",
+				"devices",
+				"available"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "simctl:list-devices-all",
+			"type": "shell",
+			"command": "xcrun",
+			"args": [
+				"simctl",
+				"list",
+				"devices"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "simctl:find-4F3F",
+			"type": "shell",
+			"command": "zsh",
+			"args": [
+				"-lc",
+				"xcrun simctl list devices | grep 4F3F || true"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "simctl:reboot-iphone17pro",
+			"type": "shell",
+			"command": "zsh",
+			"args": [
+				"-lc",
+				"xcrun simctl shutdown 4F3F534E-000F-4C06-99A8-CF3152844910 || true; xcrun simctl boot 4F3F534E-000F-4C06-99A8-CF3152844910; open -a Simulator --args -CurrentDeviceUDID 4F3F534E-000F-4C06-99A8-CF3152844910"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "simctl:status-iphone17pro",
+			"type": "shell",
+			"command": "zsh",
+			"args": [
+				"-lc",
+				"xcrun simctl list devices | grep 'iPhone 17 Pro' | grep 4F3F || true"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "e2e:ios (start metro + maestro)",
+			"type": "shell",
+			"command": "echo",
+			"args": [
+				"Task runner will use dependsOn"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
