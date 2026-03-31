@@ -1,5 +1,7 @@
 Keyboard still hides text on brain dump and what is the one thing field
 
-The time isn't centered in the middle of the circle. 
+What is the one thing > get a block > open > wellness.  App crashed
 
-Amin block open button is cut off on the bottom of the word open. 
+The font for the time is still to big to fit when the timer starts
+
+Amin block open button is even more cut off than before on the bottom of the word open. 
