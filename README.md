@@ -1,5 +1,5 @@
-Core system and weekly reviews can't be clicked
+Keyboard still hides text on brain dump and what is the one thing field
 
-Event brain dump is still hiding my text
+The time isn't centered in the middle of the circle. 
 
-Open button next to power block isn't visible
+Amin block open button is cut off on the bottom of the word open. 
